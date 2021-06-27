@@ -1,0 +1,18 @@
+[
+    {
+        "id":1,
+        "category":"mobile"
+    },
+    {
+        "id":2,
+        "category":"shirt"
+    },
+    {
+        "id":3,
+        "category":"laptop"
+    },
+    {
+        "id":4,
+        "category":"suits"
+    }
+]

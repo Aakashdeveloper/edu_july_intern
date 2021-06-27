@@ -1,0 +1,14 @@
+[
+    {
+        "id":1,
+        "religion":"Hindu"
+    },
+    {
+        "id":2,
+        "religion":"Muslim"
+    },
+    {
+        "id":1,
+        "religion":"Sikh"
+    }
+]

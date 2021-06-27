@@ -1,0 +1,24 @@
+[
+    {
+        "id":1,
+        "name":"Iphone",
+        "category":"Mobile",
+        "category_id":1,
+        "rating":4.5,
+        "price":1000,
+        "image":"https://i.ibb.co/HYGytgg/download.jpg",
+        "color":"black",
+        "company":"Apple"
+    },
+    {
+        "id":2,
+        "name":"Iphone",
+        "category":"Mobile",
+        "category_id":1,
+        "rating":4.5,
+        "price":1000,
+        "image":"https://i.ibb.co/HYGytgg/download.jpg",
+        "color":"black",
+        "company":"Apple"
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "id":1,
+        "name":"Sun Park Resort",
+        "city":"manali",
+        "city_id":2,
+        "rating":4.5,
+        "price":1000,
+        "image":"https://i.ibb.co/HYGytgg/download.jpg",
+        "address":"",
+        "phone":76756565
+    }
+]
