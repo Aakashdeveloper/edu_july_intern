@@ -1,24 +1,47 @@
 [
     {
         "id":1,
-        "name":"Iphone",
+        "name":"Iphone10",
         "category":"Mobile",
         "category_id":1,
         "rating":4.5,
         "price":1000,
         "image":"https://i.ibb.co/HYGytgg/download.jpg",
         "color":"black",
-        "company":"Apple"
+        "brand":"Apple"
     },
     {
         "id":2,
-        "name":"Iphone",
+        "name":"Iphone11",
         "category":"Mobile",
         "category_id":1,
         "rating":4.5,
         "price":1000,
         "image":"https://i.ibb.co/HYGytgg/download.jpg",
         "color":"black",
-        "company":"Apple"
+        "brand":"Oppo"
+    },
+    {
+        "id":3,
+        "name":"full Tshirt",
+        "category":"shirt",
+        "category_id":2,
+        "rating":4.5,
+        "price":1000,
+        "image":"https://i.ibb.co/HYGytgg/download.jpg",
+        "color":"black",
+        "brand":"UCB"
+    }
+    ,
+    {
+        "id":4,
+        "name":"Hp Pavallion",
+        "category":"shirt",
+        "category_id":3,
+        "rating":4.5,
+        "price":1000,
+        "image":"https://i.ibb.co/HYGytgg/download.jpg",
+        "color":"Gray",
+        "brand":"HP"
     }
 ]
