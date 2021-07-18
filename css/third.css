@@ -1,0 +1,50 @@
+body{
+    background-image: radial-gradient(skyblue, pink, rgb(235, 235, 149));
+}
+h1{
+    color:blueviolet;
+    text-align: center;
+}
+
+#main{
+    background-image: url("venice.gif");
+    background-color: skyblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:500px;
+    width:100%;
+    border:2px solid black;
+}
+
+#main h1{
+    color: white
+}
+
+.item{
+    height: 200px;
+    width:20%;
+    background-color: rgb(34, 175, 240);
+    display: inline-block;
+    border:10px groove gray;
+    margin:20px;
+    overflow:scroll;
+    box-shadow: 20px 15px 20px rgb(53, 52, 52);
+}
+
+.item1color{
+    background-color: rgb(176, 66, 228)
+}
+.item2color{
+    background-color: rgb(226, 95, 43)
+}
+.item3color{
+    background-color: rgb(192, 226, 43)
+}
+
+.item h2{
+    text-align: center;
+    color:white
+}
+p{
+    color: white
+}

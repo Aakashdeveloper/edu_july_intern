@@ -81,3 +81,42 @@ _target > open website in new tab
 
 
 single template page
+//////
+without html css is nothing
+> css is all about design
+> 
+
+inline > style tag > stylesheet
+
+<h1></h1>
+{   
+    color:red,
+    fontsize:1,
+    text-align:center,
+    marign:10
+}
+
+
+inline 
+{
+   color:red
+   fontsize:1
+}
+
+styleTag{
+    fontsize:2,
+    text-align:center
+    
+}
+
+stylesheet{
+   color:orange
+   fontsize:2
+   text-align:right
+   marign:10
+}
+
+
+Tag Name > Target using tagName (h1,p)
+ # Id > When you want to target unique Element
+ . Class> When you want to target group of Element

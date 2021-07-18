@@ -1,0 +1,30 @@
+body{
+    background-image: url("venice.gif");
+    background-color: skyblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    color:palegreen
+}
+h2{
+    color:teal
+}
+#head2{
+    color:lawngreen
+}
+#myid{
+    font-style: italic;
+    color:chocolate
+}
+.para{
+    color:olivedrab
+}
+.myclass{
+    font-size:40px;
+    color:blue
+}
+#boldme{
+    color:blueviolet;
+    font-size:40px;
+}
