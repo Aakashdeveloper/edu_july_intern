@@ -16,12 +16,6 @@ body{
     height: 500px;
 }
 
-#quicksearch{
-    border: 1px solid gray;
-    width:100%;
-    height: 500px;
-}
-
 #login{
     margin-left: 70%;
 }
@@ -45,4 +39,161 @@ body{
 
 #logo > span {
     font-weight: bold;
+    position: absolute;
+    margin-left: -25px;
+    margin-top: 10px
 }
+
+#heading{
+    text-align: center;
+    color:white;
+    font-size:35px;
+    margin-top:30px;
+}
+
+#dropdown{
+    height:60px;
+    width:60%;
+    margin-left: 28%;
+    margin-top: 3%;
+}
+
+select{
+    height:60px;
+    width:30%;
+    font-size:20px
+}
+
+#restaurants{
+    width:50%;
+}
+
+/* Quick Search Css*/
+
+#quicksearch{
+    width:80%;
+    height: 500px;
+    margin-left:10%;
+    margin-top:2%
+}
+
+#QuickHeading{
+    color:#192f60;
+    font-size:30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display:block;
+    font-weight:bold
+}
+
+#QuickSubHeading{
+    color:gray;
+    font-size:20px;
+    margin-top: 20px;
+    position: absolute;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: .01;
+}
+
+.tileContainer{
+    height: 180px;
+    width: 30%;
+    box-shadow: 0px 3px 15px black;
+    display: inline-block;
+    margin-left: 2%;
+    margin-top: 4%;
+}
+
+#mainTileContainer{
+    margin-top: 3%;
+}
+
+.tileComponent1{
+    width:46%;
+    float: left;
+}
+
+.tileComponent2{
+    width:46%;
+    float: left;
+    margin-left:20px;
+    margin-top: 20px;
+}
+
+.tileComponent1 > img{
+    height: 180px;
+    width:100%
+}
+
+.componentHeading{
+    color: #192f60;
+    font-size:25px;
+    font-weight: bold
+}
+
+.componentSubHeading{
+    color: gray;
+    font-size:18px;
+    line-height:1;
+}
+@media screen and (max-width:1600px){
+    body{
+        background-color:lightgoldenrodyellow
+    }
+}
+
+@media screen and (max-width:1400px){
+    body{
+        background-color: lightsalmon
+    }
+}
+
+@media screen and (max-width:1200px){
+    body{
+        background-color: skyblue;
+    }
+    .tileContainer{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    body{
+        background-color: lightslategrey;
+        
+    }
+    .tileContainer{
+        width: 40%;
+        
+    }
+    .componentSubHeading{
+        color:white;
+    }
+}
+
+@media screen and (max-width:800px){
+    body{
+        background-color: lightpink;
+    }
+    .tileContainer{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:600px){
+    body{
+        background-color: lightgreen;
+    }
+    .tileContainer{
+        width: 100%;
+    }
+    #mainTileContainer{
+        margin-top:7%;
+    }
+}
+
+
+
+
+
+
+
