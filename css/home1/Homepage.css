@@ -101,6 +101,7 @@ select{
     display: inline-block;
     margin-left: 2%;
     margin-top: 4%;
+    
 }
 
 #mainTileContainer{
@@ -135,6 +136,37 @@ select{
     font-size:18px;
     line-height:1;
 }
+
+.tileContainer:hover{
+   transform: scale(1.1)
+}
+
+.bike{
+    margin-left:1%;
+    animation: moveBike 20s infinite;
+}
+
+/*
+.bike{
+    margin-left:1%;
+    transition: margin-left 5s;
+}
+
+
+.bike:hover{
+    margin-left:90%
+}
+*/
+
+@keyframes moveBike {
+    0% {margin-left:10%}
+    20% {margin-left:40%}
+    60% {margin-left:65%}
+    80% {margin-left:95%}
+    100% {margin-left:0%}
+}
+
+
 @media screen and (max-width:1600px){
     body{
         background-color:lightgoldenrodyellow
@@ -197,3 +229,82 @@ select{
 
 
 
+
+.input-box {
+    font-size: 14px;
+    padding-left: 35px;
+    width: 487px;
+    height: 55px;
+    color: #8c96ab;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    margin-left: -14px;
+  }
+
+  .search {
+    left: 10px;
+    color: #8c96ab;
+    font-size: 14px;
+  }
+  
+  .search-result-restaurant-block{
+    background-color: #fff;
+    text-align: left;
+    cursor: pointer;
+    display:none
+  }
+  .search-result-image-block{
+    display: inline-block;
+    margin: 10px 0 10px 20px;
+    
+  }
+  .search-result-restaurant-details{
+    display: inline-block;
+    vertical-align: top; 
+    margin: 10px 0 10px 20px;
+  }
+  .search-result-restaurant-name{
+    color: #192f60;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .search-result-restaurant-address{
+    color: #636f88;
+    font-size: 12px;
+    font-weight: normal; 
+    width: 300px;
+  }
+  .no-result-block{
+    background-color: #fff;
+    text-align: left;
+    height: 50px;
+    padding: 10px;
+  }
+  .no-result-message{
+    color: #192f60;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+
+#box{
+    border:2px solid black;
+    height:100px;
+    width:200px;
+    margin:10%
+}
+
+#box>p{
+    margin:20%
+}
+
+#mypara1{
+    border:1px solid green;
+    padding:10px;
+}
+
+#mypara2{
+    border:1px solid orange;
+    margin:10px;
+}

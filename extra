@@ -120,3 +120,33 @@ stylesheet{
 Tag Name > Target using tagName (h1,p)
  # Id > When you want to target unique Element
  . Class> When you want to target group of Element
+
+
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/secondproject.git
+git push -u origin master
+
+download gitbash
+https://git-scm.com/downloads
+
+
+git add .
+git commit -m "first commit"
+git push
+
+
+Bootstrap
+>> Pre Written CSS Done by Twitter
+
+lg <1200
+md <992
+sm <768
+xs >768
+
+primary >blue
+success >green
+warning >orange
+danger  >red
+info    >skyblue

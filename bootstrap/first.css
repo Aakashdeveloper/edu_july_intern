@@ -1,0 +1,33 @@
+#first{
+    background-color: thistle;
+    height: 200px
+}
+#second{
+    background-color: blueviolet;
+    height: 200px
+}
+#third{
+    background-color: lightcoral;
+    height: 200px
+}
+#four{
+    background-color: darkcyan;
+    height: 200px
+}
+#five{
+    background-color: brown;
+    height: 200px
+}
+#six{
+    background-color: gold;
+    height: 200px
+}
+
+#first
+{
+    overflow: scroll;
+}
+
+.btn-primary{
+    background-color:teal !important;
+}
