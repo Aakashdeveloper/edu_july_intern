@@ -11,9 +11,9 @@ git history
 tabnine
 
 // design(static website)
-HTML  > structure
+HTML  > Structure
 CSS   > Design 
-Bootstrap > responsive
+Bootstrap > Responsive
 
 ////// dynamic            
 > Javascript > Logical
@@ -150,3 +150,12 @@ success >green
 warning >orange
 danger  >red
 info    >skyblue
+
+bootstrap4
+col- <576
+col-sm >576
+col-md >768
+col-lg > 992
+col-xl >1200
+
+https://getbootstrap.com/docs/5.1/getting-started/introduction/
