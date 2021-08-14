@@ -96,6 +96,7 @@ select{
 
 .tileContainer{
     height: 180px;
+    width: 30%;
     box-shadow: 0px 3px 15px black;
     display: inline-block;
     margin-left: 2%;
@@ -108,16 +109,20 @@ select{
 }
 
 .tileComponent1{
+    width:46%;
+    float: left;
 }
 
 .tileComponent2{
+    width:46%;
+    float: left;
     margin-left:20px;
     margin-top: 20px;
 }
 
 .tileComponent1 > img{
     height: 180px;
-    width:80%
+    width:100%
 }
 
 .componentHeading{
@@ -161,7 +166,7 @@ select{
     100% {margin-left:0%}
 }
 
-/*
+
 @media screen and (max-width:1600px){
     body{
         background-color:lightgoldenrodyellow
@@ -193,7 +198,7 @@ select{
         
     }
     .componentSubHeading{
-        color:white;
+        color:rgb(230, 41, 41);
     }
 }
 
@@ -217,7 +222,7 @@ select{
         margin-top:7%;
     }
 }
-*/
+
 
 
 
