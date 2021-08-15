@@ -154,3 +154,7 @@ var a = prompt("Enter first number")
 var b = prompt("Enter second number")
 Number(a)-Number(b)
 10
+
+alert("Form submmitted succesfully")
+undefined
+alert("No Slot Open")
