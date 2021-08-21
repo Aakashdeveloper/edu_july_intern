@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="form.js"></script>
+        <link rel="stylesheet" href="form.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-5">
+                    <h1>Employee Form</h1>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Developer Funnel Employee
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="orderid">OrderId</label>
+                            <input class="form-control"
+                            name="orderid" id="orderid" readonly/>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname">FirstName</label>
+                            <input class="form-control" placeholder="Fname"
+                            name="fname" id="firstname" required 
+                            onblur="nameToUpper()"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">LastName</label>
+                            <input class="form-control" placeholder="Lname"
+                            name="lname" id="lastname"/>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="email">Email</label>
+                                <input class="form-control" placeholder="a@a.com"
+                                name="email" id="email" type="email" required/>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="password">Password</label>
+                                <input class="form-control" placeholder="password"
+                                name="password" id="password" type="password" 
+                                onInput="checkPassword()"/>
+                                <p id="pout"></p>
+                                <div id="ppout"></div>
+                            </div>
+                            
+                        </div>
+                        <span></span>
+                        <div class="form-group">
+                            <label for="exp">Experience</label>
+                            <select class="form-control" id="exp" onChange="getExp()" >
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <input type="submit" class="btn btn-success"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script>
+            window.onload=fillId()
+        </script>
+    </body>
+</html>
