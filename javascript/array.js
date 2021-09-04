@@ -121,3 +121,12 @@ city[2][2]
 "Yellow"
 city[2][1][0]
 "Bmw"
+
+var a= 10
+undefined
+var b = ["a","b"]
+undefined
+Array.isArray(a)
+false
+Array.isArray(b)
+true

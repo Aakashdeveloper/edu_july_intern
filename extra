@@ -171,11 +171,12 @@ String literals(Contact)
 ifelse
 ternory
 array
-
 localstorage
 sessionstorage
 cookie
 loop
+
+
 map
 Filter
 let const

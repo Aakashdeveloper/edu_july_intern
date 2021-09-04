@@ -7,7 +7,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      
+        <script src="Home.js"></script>
     </head>
     <body>
         <div id="main">
@@ -30,14 +30,11 @@
                     <span>e!</span>
                 </div>
                 <div id="heading">
-                    Find The Best Reståurânts, Cafés and bärs  
+                    Find The Best Reståurânts, Cafés and bärs <span id="usercity"></span>
                 </div>
                 <div id="dropdown">
-                    <select>
+                    <select onChange="recommand()" id="city">
                         <option>---SELECT LOCATION---</option>
-                        <option>Delhi</option>
-                        <option>Mumbai</option>
-                        <option>Chandigarh</option>
                     </select>
                     <select id="restaurants">
                         <option>---SELECT Reståurânts---</option>
@@ -139,7 +136,10 @@
                 
             </div>
         </div>
-
+        <script>
+            window.onload=getCity();
+            window.onload=showRec();
+        </script>
         
     </body>
 </html>
