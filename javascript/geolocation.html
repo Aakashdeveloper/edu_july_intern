@@ -1,0 +1,35 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <button onclick="getLocation()">
+            Geo Location
+        </button>
+        <p id="out"></p>
+        <p id="address"></p>
+        <script>
+            var x = document.getElementById('out');
+            var y = document.getElementById('address');
+            
+            function getLocation(){
+                if(navigator.geolocation){
+                    navigator.geolocation.getCurrentPosition(showPosition)
+                }else{
+                    x.innerText="Geo Not Supported"
+                }
+            }
+
+            function showPosition(data){
+                console.log(data)
+                x.innerText=`Latitude is ${data.coords.latitude} & Longitude is ${data.coords.longitude}`
+                var url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${data.coords.latitude},${data.coords.longitude}&key=`;
+                fetch(url)
+                .then((res) => res.json())
+                .then((data) => {
+                    y.innerText=data.results[0].formatted_address
+                })
+            }
+
+        </script>
+    </body>
+</html>

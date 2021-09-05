@@ -32,6 +32,14 @@ function add(edureka,developerfunnel,node){
 add(1,2,3)
 6
 
+//es5
+function add(a,b){
+    return a+b
+}
+
+//es6
+var add = (a,b) => {return a+b}
+
 ///////////////////////////////
 = assignment
 == compare the data

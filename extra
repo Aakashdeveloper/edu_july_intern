@@ -175,8 +175,18 @@ localstorage
 sessionstorage
 cookie
 loop
-
-
 map
+object
+JSON
+Api Calling
+Fetch
+Promise
+async await
+geolocation
+light/dark
+
+
 Filter
 let const
+
+http://api.openweathermap.org/data/2.5/forecast/daily?q=Delhi&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29

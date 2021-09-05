@@ -1,0 +1,36 @@
+var a = [
+    {
+      "dt": 1630839600,
+      "sunrise": 1630819186,
+      "sunset": 1630867140,
+      "temp": {
+        "day": 19.71,
+        "min": 13.61,
+        "max": 23.78,
+        "night": 17.03,
+        "eve": 22.23,
+        "morn": 14.35
+      },
+      "feels_like": {
+        "day": 19.62,
+        "night": 16.49,
+        "eve": 21.84,
+        "morn": 14.22
+      },
+      "pressure": 1021,
+      "humidity": 72,
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "scattered clouds",
+          "icon": "03d"
+        }
+      ],
+      "speed": 3.47,
+      "deg": 98,
+      "gust": 7.65,
+      "clouds": 48,
+      "pop": 0
+    }
+]
