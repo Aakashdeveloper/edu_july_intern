@@ -61,3 +61,17 @@ var movies = [
 
 movies[1].showTiming
 movies[1].showTiming.nightTime[0]
+
+
+
+var calc ={
+    sum: (a,b) => {return a+b},
+    sub: (a,b) => {return a-b}
+}
+
+
+
+calc.sum(1,2)
+3
+calc.sub(1,2)
+-1
