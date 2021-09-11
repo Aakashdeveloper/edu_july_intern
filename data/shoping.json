@@ -4,6 +4,7 @@
         "name":"Iphone10",
         "category":"Mobile",
         "category_id":1,
+        "sub_category_id":1,
         "rating":4.5,
         "price":1000,
         "image":"https://i.ibb.co/HYGytgg/download.jpg",

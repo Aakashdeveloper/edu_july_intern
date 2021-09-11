@@ -190,3 +190,23 @@ Filter
 let const
 
 http://api.openweathermap.org/data/2.5/forecast/daily?q=Delhi&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29
+
+//dummy api
+** NodeJs must be install in system
+// only one time
+> open cmd as Administrator
+> npm i -g json-server
+> close cmd
+
+
+>>Everytime you want to generate api<<
+> open new cmd
+> go inside the folder
+> cd and path
+> json-server --watch data.json --port 4500
+
+
+///mac/linux
+// only one time
+> open terminal
+> sudo npm i -g json-server

@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "name":"apple",
+        "image":"",
+        "category_id":1
+    },
+    {
+        "id":2,
+        "name":"oppo",
+        "image":"",
+        "category_id":1
+    },
+    {
+        "id":3,
+        "name":"men's shirt",
+        "image":"",
+        "category_id":2
+    }
+]
