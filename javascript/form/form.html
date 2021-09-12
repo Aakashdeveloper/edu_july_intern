@@ -18,11 +18,11 @@
                     Developer Funnel Employee
                 </div>
                 <div class="panel-body">
-                    <form>
+                    <form action="http://localhost:7300/employee" method="post">
                         <div class="form-group">
                             <label for="orderid">OrderId</label>
                             <input class="form-control"
-                            name="orderid" id="orderid" readonly/>
+                            name="id" id="orderid" readonly/>
                         </div>
                         <div class="form-group">
                             <label for="firstname">FirstName</label>
@@ -54,7 +54,7 @@
                         <span></span>
                         <div class="form-group">
                             <label for="exp">Experience</label>
-                            <select class="form-control" id="exp" onChange="getExp()" >
+                            <select class="form-control" id="exp" name="exp" onChange="getExp()" >
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>

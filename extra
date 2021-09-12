@@ -210,3 +210,36 @@ http://api.openweathermap.org/data/2.5/forecast/daily?q=Delhi&mode=json&units=me
 // only one time
 > open terminal
 > sudo npm i -g json-server
+
+
+///NodeJs
+> Npm
+> Inbuilt Package
+> FullStack with Node
+(Node, Express, html/css/bs/EJS, MongoDB)
+
+> Rest Api
+> How to Create Login/logout(backend)
+> payment gateway
+> Deployment
+
+>>>>NPM<<<<
+node package manger
+
+package.json
+> first file in app
+> metadata(name,version,description,author)
+> commands (run, test)
+> packages
+
+//// steps to generate package.json ////
+**NodeJs must be installed in system
+> go inside the folder using cmd/terminal
+> npm init
+> Answer all questions
+> type "yes"
+
+
+//// steps to install packages ////
+> go inside the folder using cmd/terminal
+> npm i packagename
