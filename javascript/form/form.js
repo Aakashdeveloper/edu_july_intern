@@ -29,3 +29,13 @@ function getExp(){
     var exp = document.getElementById('exp').value;
     document.getElementsByTagName('span')[0].innerText=`Total Year of exp is ${exp}`
 }
+
+
+function showPassowrd(){
+    var pwd = document.getElementById('password');
+    if(pwd.type == 'password'){
+        pwd.type = "text"
+    }else{
+        pwd.type = "password"
+    }
+}

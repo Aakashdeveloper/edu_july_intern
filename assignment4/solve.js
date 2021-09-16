@@ -56,10 +56,31 @@ for(i=0;i<unique.length;i++){
 
 }
 
-[
+
+// part B
+
+var output =[
     {restaurant: 'KFC', avg: 4},
     {restaurant: 'Burger King', avg: 4},
     {restaurant: 'Domino', avg: 1.5},
     {restaurant: 'Subway', avg: 3.5},
     {restaurant: 'Pizza Hut', avg: 5}
 ]
+
+
+var final = []
+
+for(i=0;i<output.length;i++){
+    if(output[i].avg >= 4){
+        final.push(output[i])
+    }
+}
+
+//output
+var final = [
+    {restaurant: 'KFC', avg: 4},
+    {restaurant: 'Burger King', avg: 4},
+    {restaurant: 'Pizza Hut', avg: 5}
+];
+
+// output.filter((res) => {return res.avg >= 4})
