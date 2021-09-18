@@ -243,3 +243,19 @@ package.json
 //// steps to install packages ////
 > go inside the folder using cmd/terminal
 > npm i packagename
+
+C> Create (insert)(post)
+R> Read (Get)
+U> Update (put/patch)
+D> Delete (delete)
+
+Get
+Post
+Put
+Delete
+
+// have to install global
+nodemon
+> open cmd as admin
+> npm i -g nodemon
+> close cmd

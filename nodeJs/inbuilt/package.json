@@ -1,0 +1,15 @@
+{
+  "name": "myapi",
+  "version": "1.0.0",
+  "description": "this is node api",
+  "main": "fs.js",
+  "scripts": {
+    "start":"node staticapi.js"
+  },
+  "keywords": [
+    "Node",
+    "http"
+  ],
+  "author": "edureka",
+  "license": "ISC"
+}
