@@ -1,0 +1,61 @@
+>>>>>To See All Databases<<<<<<
+show dbs
+
+>>>>>To create new database<<<<<<
+use databaseName
+
+>>>>>To create collection<<<<<<
+db.first.insert({'id':1,name:'John'})
+
+db.second.insert({'id':1,name:'John'})
+
+>>>>>Go inside database<<<<<<
+use databaseName
+
+>>>>>Go see all collections<<<<<<
+show collections
+
+>>>>>to see document<<<<<<
+db.first.find()
+
+db.first.insert({'_id':2,name:'Aman'})
+{ "_id" : ObjectId("6146fe56240ce4832bdfdad7"), "id" : 1, "name" : "John" }
+
+{ "_id" : ObjectId("6146fe56240ce4832bdfdad7"), "id" : 1, "name" : "John" }
+{ "_id" : 2, "name" : "Aman" }
+
+_id >> primary key (unique value in each record)
+
+12byte
+4byte > timestamps
+5bytes > random values
+3bytes > counter
+
+
+db.first.insert({name:'Aman'})
+db.first.insert({name:'Nikita'})
+>>>>>to remove document<<<<<<
+db.first.remove({})
+
+{ "_id" : ObjectId("6147003d240ce4832bdfdad9"), "name" : "Aman" }
+{ "_id" : ObjectId("6147003d240ce4832bdfdada"), "name" : "Nikita" }
+{ "_id" : ObjectId("61470050240ce4832bdfdadb"), "name" : "Bhumika" }
+
+db.category.insert([
+    {
+        "id":1,
+        "category":"mobile"
+    },
+    {
+        "id":2,
+        "category":"shirt"
+    },
+    {
+        "id":3,
+        "category":"laptop"
+    },
+    {
+        "id":4,
+        "category":"suits"
+    }
+])
