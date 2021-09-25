@@ -59,3 +59,11 @@ db.category.insert([
         "category":"suits"
     }
 ])
+
+
+///////find with condition/////
+
+db.collection.find({_id:"12"})
+
+db.restaurent.find({_id:"10"}).pretty()
+db.restaurent.find({city:"1"}).pretty()

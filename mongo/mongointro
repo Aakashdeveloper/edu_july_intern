@@ -1,0 +1,68 @@
+
+|Roll No | Hindi | English |  computer |
+-------------------------------------------
+| 1      |  88   |         |           |
+| 2      |       |  80     |           |
+| 3      |  90   |         |           |
+| 4      |  80   |         |    90     |
+
+nosql
+
+var student = [
+    {
+        RollNo:1,
+        Hindi:88
+    },
+    {
+        RollNo:2,
+        English:88
+    },
+    {
+        RollNo:3,
+        Hindi:90
+    },
+    {
+        RollNo:4,
+        Hindi:80,
+        Computer:90
+    }
+]
+
+Sql                 NoSql
+database            database
+table               collections
+row                 document
+Select              Find
+insert              insert
+update              Update
+delete              remove
+
+////local setups////
+> install mongodb
+> https://www.mongodb.com/try/download/community
+> download and install
+
+#window
+> in c drive make folder by the name of > data
+> in data folder make folder by the name of > db
+
+> open one cmd 
+> go inside bin folder (c/programmeFile/mongodb/server/4.4/bin)
+> mongod (this will start mongodb server on port 27017)
+
+> open second cmd
+> go inside bin folder 
+> mongo (this will start mongodb console)
+
+#mac/linux
+> open terminal (~)
+> mkdir data
+> cd data
+> mkdir db
+
+> open terminal
+> mongod --dbpath data/db (this will start mongodb server on port 27017)
+
+> open terminal
+> mongo (this will start mongodb console)
+
