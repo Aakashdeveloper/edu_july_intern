@@ -67,3 +67,15 @@ db.collection.find({_id:"12"})
 
 db.restaurent.find({_id:"10"}).pretty()
 db.restaurent.find({city:"1"}).pretty()
+
+
+db.restaurent.find({'type.mealtype':'5'})
+
+db.restaurent.count({"type.mealtype":"1"})
+3
+
+
+db.restaurent.find({cost:{$lt:300}}).pretty()
+
+
+db.restaurent.find({$and:[{cost:{$gt:300,$lt:500}}]}).pretty()

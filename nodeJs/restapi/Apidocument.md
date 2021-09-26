@@ -5,16 +5,19 @@ hotels wrt to city  > Done
 quick search data   > Done
 
 Page 2
-restaurants wrt to quickSearch
+restaurants wrt to quickSearch > Done
+
 filter
 > cuisine filter
-  data respect to cuisine and quickSearch
+  data respect to cuisine and quickSearch > Done
 > cost filter
- data respect to cuisine and cost
+ data respect to cuisine and cost > Done
+> cuisine filter + cost filter > Done
 > sort
     sort low to high in same quickSearch
     sort high to low in same quickSearch
 >
+
 
 Page 3
 > restaurants details
