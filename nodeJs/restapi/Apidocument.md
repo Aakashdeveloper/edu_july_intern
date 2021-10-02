@@ -14,19 +14,21 @@ filter
  data respect to cuisine and cost > Done
 > cuisine filter + cost filter > Done
 > sort
-    sort low to high in same quickSearch
-    sort high to low in same quickSearch
->
+    sort low to high in same quickSearch > Done
+    sort high to low in same quickSearch > Done
+> pagination > Done
 
 
 Page 3
-> restaurants details
+> restaurants details > Done
 
 page 4
-> api to place order
+> api to place order > Done 
 
 page 5
-> list all order
+> list all order > Done
+
+
 
 ///////////////////
 Admin app Node

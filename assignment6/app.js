@@ -1,15 +1,11 @@
 var express = require('express');
 const app = express();
-const bodyParser = require('body-parser');
+
 const dotenv = require('dotenv')
 dotenv.config()
 const port =  process.env.PORT||8210;
 const mongo = require('mongodb');
 const MongoClient = mongo.MongoClient;
-// to recive data from form
-app.use(bodyParser.urlencoded({extended:true}));
-app.use(bodyParser.json());
-
 //const mongourl = "mongodb://localhost:27017"
 const mongourl = "mongodb+srv://local:test1234@cluster0.f8vmc.mongodb.net/eduaug?retryWrites=true&w=majority"
 var db;
@@ -91,84 +87,6 @@ app.get('/quicksearch',(req,res) =>{
         if(err) throw err;
         res.send(result)
     })
-})
-
-// restaurant Details
-app.get('/details/:id',(req,res) => {
-    var id = req.params.id
-    db.collection('restaurents').find({_id:id}).toArray((err,result)=>{
-        if(err) throw err;
-        res.send(result)
-    })
-    /*
-    db.collection('restaurents').findOne({_id:id},(err,result)=>{
-        if(err) throw err;
-        res.send(result)
-    })
-    */
-})
-
-// place order 
-app.post('/placeOrder',(req,res) => {
-    console.log(req.body);
-    db.collection('orders').insert(req.body,(err,result) => {
-        if(err) throw err;
-        res.send("Order Placed")
-    })
-})
-
-app.get('/viewOrder',(req,res) => {
-    var query = {}
-    if(req.query.email){
-        query = {email:req.query.email}
-    }
-    db.collection('orders').find(query).toArray((err,result)=>{
-        if(err) throw err;
-        res.send(result)
-    })
-})
-
-app.get('/viewOrder/:id',(req,res) => {
-    var id = mongo.ObjectId(req.params.id);
-    db.collection('orders').find({_id:id}).toArray((err,result)=>{
-        if(err) throw err;
-        res.send(result)
-    })
-})
-
-
-app.delete('/deleteOrder',(req,res) => {
-    db.collection('orders').remove({},(err,result)=>{
-        if(err) throw err;
-        res.send(result)
-    })
-})
-
-app.put('/updateStatus/:id',(req,res) => {
-    var id = mongo.ObjectId(req.params.id);
-    var status = 'Pending';
-    var statuVal = 2
-    if(req.query.status){
-        statuVal = Number(req.query.status)
-        if(statuVal == 1){
-            status = 'Accepted'
-        }else if (statuVal == 0){
-            status = 'Rejected'
-        }else{
-            status = 'Pending'
-        }
-    }
-    db.collection('orders').updateOne(
-        {_id:id},
-        {
-            $set:{
-               "status": status
-            }
-        }, (err,result) => {
-            if(err) throw err;
-            res.send(`Your order status is ${status}`)
-        }
-    )
 })
 
 MongoClient.connect(mongourl, (err,client) => {
