@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <title>Dashboard</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <!-- For DataTables -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+                <a class="navbar-brand" href="#">Developer Funnel</a>
+                <button class="navbar-toggler" type="button" data-toggle="collpase"
+                    data-targert="#collapsibleNavbar">
+                    <span class="navbar-toggle-icon"></span>
+                </button>
+
+                <div class="collpase navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/newrest">Add new</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/newrest">Orders</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <br/><br/><br/><br/>
+            <h2>List of Restaurant</h2>
+            <div class="table-responsive">
+                <table class="table table-hover table-striped"  id="myTable">
+                    <caption>Restaurant List</caption>
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Name</th>
+                            <th>City</th>
+                            <th>Locality</th>
+                            <th>Image</th>
+                            <th>Cost</th>
+                            <th>Address</th>
+                            <th>MealType</th>
+                            <th>Cuisine</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%for(i=0;i<data.length;i++){%>
+                            <tr>
+                                <td><%=data[i].name%></td>
+                                <td><%=data[i].city_name%></td>
+                                <td><%=data[i].locality%></td>
+                                <td><img src="<%=data[i].thumb%>" style="width:50px;height:50px"></td>
+                                <td><%=data[i].cost%></td>
+                                <td><%=data[i].address%></td>
+                                <td>
+                                    <%for(j=0;j<data[i].type.length;j++){%>
+                                        <p><%=data[i].type[j].name%></p>
+                                    <%}%>
+                                </td>
+                                <td>
+                                    <%for(j=0;j<data[i].Cuisine.length;j++){%>
+                                        <p><%=data[i].Cuisine[j].name%></p>
+                                    <%}%>
+                                </td>
+                                <td> <button type="button" class="edit btn btn-warning"
+                                    data-toggle="modal" data-target="#myModal"
+                                    id="<%=data[i]._id%>">Edit</button>
+                                   <button type="button" class="delete btn btn-danger" id="<%=data[i]._id%>">
+                                       Delete
+                                   </button>
+                                </td>
+                            </tr>
+                        <%}%>
+                    </tbody>
+                </table>
+                    
+             
+            </div>
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#myTable').DataTable()
+        })
+        // edit data
+        $('.edit').click(function() {
+                    id= this.id;
+                    console.log('id is '+id)
+                    $.ajax({
+                        type: 'get',
+                        url: `/user/${id}`,
+                        success: function(data){
+                              $("#update_id").attr("value", data[0]._id);
+                              $("#update_name").attr("value", data[0].name);
+                              $("#update_city").attr("value", data[0].city);
+                              $("#update_phone").attr("value", data[0].phone);
+                              $("#update_role").attr("value", data[0].role);
+                              $('#Modal').modal({show: true});
+                        },
+                        error: function(){
+                            alert('No data');
+                        }
+                    });
+                });
+        // update data
+        $(function(){
+            $('#update_table').on('click', function(e){
+            var data = $('#update_user').serialize();
+            console.log(">>>>>", data)
+            e.preventDefault();
+            $.ajax({
+                    url: '/updateUser',
+                    type:'PUT',
+                    data : data,
+                    success: function(data){
+                    console.log("success of update")
+                    window.location.reload()
+                },
+                error: function(){
+                        alert('No data');
+                    }
+                });
+            });
+        });
+        //delete User
+        $('.delete').click(function() {
+            var response = confirm("do you want to delete")
+            id = this.id;
+            console.log(response)
+            if(response === true){
+                $.ajax({
+                    type: 'DELETE',
+                    url: '/deleteUser',
+                    method: 'delete',
+                    data: {"_id":id},
+                    success: function(data){
+                        console.log('data is '+JSON.stringify(data));
+                        window.location.reload()
+                    },
+                    error: function(){
+                        alert('No data');
+                        }
+                        });
+                    }
+                    else{
+                        console.log("not deleted")
+                    }
+                });
+        </script>
+
+    </body>
+</html>

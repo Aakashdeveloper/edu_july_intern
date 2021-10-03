@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Add new Data</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <br>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Developer Funnel</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/new">Add new</a>
+      </li>
+    </ul>
+  </div> 
+</nav>
+  <h2>Add new Data</h2>
+  <form action="/addRest" method="POST">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+    </div>
+    <div class="form-group">
+        <label for="locality">Locality:</label>
+        <input type="text" class="form-control" id="locality" placeholder="Enter locality" name="locality">
+    </div>
+    <div class="form-group">
+        <label for="thumb">Thumb:</label>
+        <input type="text" class="form-control" id="thumb" placeholder="Enter thumb" name="thumb">
+    </div>
+    <div class="form-group">
+        <label for="cost">Cost:</label>
+        <input type="text" class="form-control" id="cost" placeholder="Enter cost" name="cost">
+    </div>
+    <div class="form-group">
+        <label for="Address">address:</label>
+        <input type="text" class="form-control" id="address" placeholder="Enter address" name="address">
+    </div>
+    <div class="form-group">
+        <label for="city">City</label>
+        <select class="form-control" id="city" name="city">
+            <option value="1,Delhi">Delhi</option>
+            <option value="2,Mumbai">Mumbai</option>
+            <option value="3,Pune">Pune</option>
+            <option value="4,Chandigarh">Chandigarh</option>
+            <option value="5,Goa">Goa</option>
+            <option value="6,Manali">Manali</option>
+        </select>
+    </div>
+
+    <label>Cuisine</label>
+    <div class="form-group">
+        <label class="checkbox-inline">
+            <input type="checkbox" value="1,North Indian" name="cuisine"> North Indian
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" value="2,South Indian" name="cuisine"> South Indian
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" value="3,Chinese" name="cuisine"> Chinese
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" value="4,Fast Food" name="cuisine"> Fast Food
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" value="5,Street Food" name="cuisine"> Street Food
+        </label>
+    </div>
+
+    <label>Meal Type</label>
+    <div class="form-group">
+        <label class="checkbox-inline">
+            <input type="checkbox" value="1,BreakFast" name="mealtype"> BreakFast
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" value="2,Lunch" name="mealtype"> Lunch
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" value="3,Dinner" name="mealtype"> Dinner
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" value="4,Snacks" name="mealtype"> Snacks
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" value="5,Drinks" name="mealtype"> Drinks
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" value="6,NightLife" name="mealtype"> NightLife
+        </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+    <a href="/" class="btn btn-success" role="button">cancel</a>
+  </form>
+</div>
+
+</body>
+</html>

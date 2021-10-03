@@ -285,3 +285,19 @@ queryparams
 > click connect
 > deploy branch
 > click on view
+
+
+ejs
+embedded javascript
+
+
+var a = [ '1,BreakFast', '2,Lunch', '3,Dinner' ]
+var out = []
+
+a.map((data) => {
+    var val = data.split(',')
+    var obj = {}
+    obj.mealtype = val[0];
+    obj.name = val[1]
+    out.push(obj)
+})
