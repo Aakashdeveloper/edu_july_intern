@@ -301,3 +301,11 @@ a.map((data) => {
     obj.name = val[1]
     out.push(obj)
 })
+
+morgan > for logs
+cors
+chalk
+pm2
+passport
+lodash
+nodemailer
