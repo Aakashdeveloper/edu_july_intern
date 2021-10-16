@@ -1,0 +1,69 @@
+body{
+    margin:auto
+}
+
+#main{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#search{
+    background-image: url('https://i.ibb.co/gJbF4yH/food-wallpaper.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:red;
+    background-size: 100% 500px;
+    width:100%;
+    height: 500px;
+}
+
+#login{
+    margin-left: 70%;
+}
+
+#login> a{
+    text-decoration: none;
+    color:black;
+    font-size:30px;
+}
+
+#logo{
+    font-size:90px;
+    color:red;
+    text-align: center;
+    background-color:white;
+    height:150px;
+    width:150px;
+    margin-left: 45%;
+    border-radius: 50%;
+}
+
+#logo > span {
+    font-weight: bold;
+    position: absolute;
+    margin-left: -25px;
+    margin-top: 10px
+}
+
+#heading{
+    text-align: center;
+    color:white;
+    font-size:35px;
+    margin-top:30px;
+}
+
+#dropdown{
+    height:60px;
+    width:60%;
+    margin-left: 28%;
+    margin-top: 3%;
+}
+
+select{
+    height:60px;
+    width:30%;
+    font-size:20px
+}
+
+#restaurants{
+    width:50%;
+}
