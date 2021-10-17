@@ -309,3 +309,55 @@ pm2
 passport
 lodash
 nodemailer
+
+React is an frontend framework that help to build 
+single page applications
+
+>>>>>>>>><<<<<<<<<<
+Step to setup react
+
+>>window
+> open cmd as Administrator
+> npm i -g create-react-app
+
+>>When you need app
+> open cmd
+> go inside the folder
+> create-react-app appname
+
+
+>>> mac/linux
+> open terminal
+> sudo npm i -g create-react-app
+
+
+>>When you need app
+> open terminal
+> go inside the folder
+> create-react-app appname
+
+react   >>> main library
+react-dom >> help to render content
+react-script >> help to run the applications
+
+/////component/////
+> functional
+>> Dumb component
+>> we will use for display puropose
+>> we cannot maintain the state
+
+> classComponenet
+>> logical Component
+>> we will use for display purpose as well as api call
+>> we can maintain the state
+
+state
+> its a local variable
+> each component can have its own state
+> we can update the value of state (mutable)
+> we can only interact with data with state
+
+props
+> it is use to pass the data from one component to Another
+(component must be nested)
+> we cannot update the value of props
