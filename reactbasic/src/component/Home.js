@@ -9,14 +9,28 @@ class Home extends Component {
         super(props)
 
         this.state={
-            product:JSON
+            product:JSON,
+            filtered:JSON
         }
     }
+    /*
+    var a = [5,7,8,1,4,6,9,4];
+    a.filter((data) => { return data>4})
+    */
+
+    filterProduct = (keyword) => {
+        var output = this.state.product.filter((abc) => {
+            return abc.name.toLowerCase().indexOf(keyword.toLowerCase())>-1
+        })
+
+        this.setState({filtered:output})
+    }
+
     render(){
         return(
             <>
-                <Header/>
-                <ProductDisplay prodData={this.state.product}/>
+                <Header userText={(data) => {this.filterProduct(data)}}/>
+                <ProductDisplay prodData={this.state.filtered}/>
                 <Footer year="2021" month="Oct"/>
             </>
         ) 

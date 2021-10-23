@@ -361,3 +361,12 @@ props
 > it is use to pass the data from one component to Another
 (component must be nested)
 > we cannot update the value of props
+
+parent > child (props)
+child > parent (props with functions)
+
+function add(komal, komal1){
+    return komal+komal1
+}
+
+add(1,2)

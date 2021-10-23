@@ -6,12 +6,14 @@ dotenv.config()
 const port =  process.env.PORT||8210;
 const mongo = require('mongodb');
 const MongoClient = mongo.MongoClient;
+const cors = require('cors')
 // to recive data from form
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
+app.use(cors())
 
 //const mongourl = "mongodb://localhost:27017"
-const mongourl = "mongodb+srv://local:test1234@cluster0.f8vmc.mongodb.net/eduaug?retryWrites=true&w=majority"
+const mongourl = "mongodb+srv://local:testuser@cluster0.f8vmc.mongodb.net/zomato?retryWrites=true&w=majority"
 var db;
 //get
 app.get('/',(req,res) => {
@@ -173,7 +175,7 @@ app.put('/updateStatus/:id',(req,res) => {
 
 MongoClient.connect(mongourl, (err,client) => {
     if(err) console.log("Error While Connecting");
-    db = client.db('eduaug');
+    db = client.db('zomato');
     app.listen(port,()=>{
         console.log(`listening on port no ${port}`)
     });

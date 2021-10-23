@@ -1,12 +1,12 @@
 import React from 'react';
 import Search from './Search';
-import QuickSearch from './QuickSearch';
+import QuickApi from './QuickApi';
 
 const Home = () => {
     return(
         <div id="main">
             <Search/>
-            <QuickSearch/>
+            <QuickApi/>
         </div>
     )
 }
