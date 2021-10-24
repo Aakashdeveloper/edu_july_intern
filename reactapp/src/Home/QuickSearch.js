@@ -7,7 +7,7 @@ const QuickSearch = (props) => {
         if(quickData){
             return quickData.map((item) => {
                 return(
-                    <div class="tileContainer">
+                    <div class="tileContainer" key={item.mealtype_id}>
                         <div class="tileComponent1">
                             <img src={item.meal_image} alt="breakfast"/>
                         </div>
