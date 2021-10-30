@@ -370,3 +370,8 @@ function add(komal, komal1){
 }
 
 add(1,2)
+
+//// default props////
+history > redirect
+location > for query params
+match > for params
