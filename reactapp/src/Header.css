@@ -1,4 +1,19 @@
-h1{
-    text-align: center;
-    color:red
+#header{
+    background-color: red;
+    height:86px;
+    width:100%
+}
+
+.logoListing{
+    height:50px;
+    width:50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#headingListing{
+    color:red;
+    margin: 26%;
 }

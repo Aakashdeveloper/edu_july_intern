@@ -1,0 +1,10 @@
+.sliderImage{
+    height:300px;
+    width:80%;
+    margin-left:10%
+}
+.galButton{
+    position:absolute;
+    margin-left:-16%;
+    margin-top:17%;
+}

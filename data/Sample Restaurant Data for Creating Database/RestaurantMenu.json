@@ -317,7 +317,7 @@
     {
         "menu_id":36,
         "menu_name": "Chole Bhature",
-        "description": "Punjabi style spicy chickpeas served with soft wheat flour bread "Bhature",
+        "description": "Punjabi style spicy chickpeas served with soft wheat flour bread Bhature",
         "restaurant_id": 8,
         "menu_image": "https://b.zmtcdn.com/data/dish_photos/c3d/0f7c9242099d35bca990bcb08617cc3d.jpg",
         "menu_type": "vegetarian",
@@ -596,7 +596,7 @@
         "menu_name": "Onion Rava Masala Dosa",
         "description": "made with semolina, cumin, ginger, coriander leaves and green chilies.",
         "restaurant_id": 14,
-        "menu_image": "https://b.zmtcdn.com/data/dish_photos/d12/b02c41f4e11d43bb345865a35f505d12.jpg"
+        "menu_image": "https://b.zmtcdn.com/data/dish_photos/d12/b02c41f4e11d43bb345865a35f505d12.jpg",
         "menu_type": "vegetarian",
         "menu_price": "100"
     },
@@ -605,7 +605,7 @@
         "menu_name": "Paper Plain Dosa",
         "description": "made with semolina, cumin, ginger, coriander leaves and green chilies.",
         "restaurant_id": 14,
-        "menu_image": "https://b.zmtcdn.com/data/dish_photos/ce8/1d5acfa248f6244bcf518f1c89d2dce8.jpg"
+        "menu_image": "https://b.zmtcdn.com/data/dish_photos/ce8/1d5acfa248f6244bcf518f1c89d2dce8.jpg",
         "menu_type": "vegetarian",
         "menu_price": "90"
     },
@@ -614,7 +614,7 @@
         "menu_name": "Poori Sagu [3 Pieces]",
         "description": "Serve Poori with Sagu",
         "restaurant_id": 14,
-        "menu_image": "https://b.zmtcdn.com/data/dish_photos/542/6ab4d40d01abbe154433155ef4c6b542.jpg"
+        "menu_image": "https://b.zmtcdn.com/data/dish_photos/542/6ab4d40d01abbe154433155ef4c6b542.jpg",
         "menu_type": "vegetarian",
         "menu_price": "60"
     },
@@ -623,16 +623,9 @@
         "menu_name": "Idli [2 Pieces]",
         "description": "Idli serves with coconut chutney and sambhar in a bowl",
         "restaurant_id": 14,
-        "menu_image": "https://b.zmtcdn.com/data/dish_photos/dcb/437e7ba47d0fe7c78971ac916b01cdcb.jpg"
+        "menu_image": "https://b.zmtcdn.com/data/dish_photos/dcb/437e7ba47d0fe7c78971ac916b01cdcb.jpg",
         "menu_type": "vegetarian",
         "menu_price": "40"
-    },
-    
-    
-    
-    
-    
-    
-    
-    
+    }
+
 ]

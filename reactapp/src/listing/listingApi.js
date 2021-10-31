@@ -16,7 +16,7 @@ class Listing extends Component {
     render(){
         return(
             <div className="row">
-                <ListingDisplay/>
+                <ListingDisplay listData={this.state.restaurantList}/>
             </div>
         )
     }
