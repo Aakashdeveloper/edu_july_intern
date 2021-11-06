@@ -375,3 +375,6 @@ add(1,2)
 history > redirect
 location > for query params
 match > for params
+
+
+db.rmenu.find({menu_id:{$in:[38,40]}}).pretty()

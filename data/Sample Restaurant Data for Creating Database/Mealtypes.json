@@ -1,4 +1,4 @@
-[
+db.menu.insert([
     {
         "mealtype_id": 1,
         "mealtype": "Breakfast",
@@ -35,4 +35,4 @@
         "content": "Start your day with exclusive breakfast options",
         "meal_image": "https://i.ibb.co/q1fC2jW/nightlife.jpg"
     }
-]
+])

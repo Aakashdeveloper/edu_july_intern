@@ -1,4 +1,4 @@
-[
+db.rmenu.insert([
     {
         "menu_id":1,
         "menu_name": "Garlic Breadsticks",
@@ -628,4 +628,4 @@
         "menu_price": "40"
     }
 
-]
+])
