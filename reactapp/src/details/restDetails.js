@@ -21,7 +21,7 @@ class Details extends Component {
     }
 
     addToCart = (data) => {
-        // console.log("data in card",data)
+        console.log("data in card",data)
         this.setState({userItem:data})
 
     }
@@ -45,8 +45,9 @@ class Details extends Component {
                             <h3>{this.state.details.restaurant_name}</h3>
                         </div>
                         <div className="panel-body">
-                            <img src={details.restaurant_thumb} className="sliderImage"/>
+                            <img src={details.restaurant_thumb} alt={details.restaurant_name} className="sliderImage"/>
                             <button className="btn btn-danger galButton" type="button" data-toggle="modal" data-target="#myGal">Click to See Image Gallery</button>
+                           
                            
                             <hr/>
                             <h2>{details.restaurant_name}</h2>

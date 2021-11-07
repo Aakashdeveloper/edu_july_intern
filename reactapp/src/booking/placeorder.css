@@ -2,6 +2,11 @@
     float:left;
     height:330px;
     width:250px;
-    border:2px solid;
-    margin:2%
+    margin:2%;
+    box-shadow:10px 10px 20px gray
+}
+
+.items>img{
+   height:200px;
+   width:100%
 }

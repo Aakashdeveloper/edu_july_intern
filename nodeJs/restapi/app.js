@@ -57,6 +57,8 @@ app.get('/filter/:mealType',(req,res) => {
     var sort = {cost:1}
     var skip = 0;
     var limit = 1000000000000;
+    var mealType = Number(req.params.mealType);
+    var query = {"mealTypes.mealtype_id":Number(mealType)};
     if(req.query.sortkey){
         sort = {cost:req.query.sortkey}
     }
@@ -64,8 +66,6 @@ app.get('/filter/:mealType',(req,res) => {
         skip = Number(req.query.skip);
         limit = Number(req.query.limit)
     }
-    var mealType = req.params.mealType;
-    var query = {"mealTypes.mealtype_id":Number(mealType)};
     if(req.query.cuisine && req.query.lcost && req.query.hcost){
         query={
             $and:[{cost:{$gt:Number(req.query.lcost),$lt:Number(req.query.hcost)}}],
@@ -163,8 +163,8 @@ app.put('/updateStatus/:id',(req,res) => {
     var id = mongo.ObjectId(req.params.id);
     var status = 'Pending';
     var statuVal = 2
-    if(req.query.status){
-        statuVal = Number(req.query.status)
+    if(req.query.statuVal){
+        statuVal = Number(req.query.statuVal)
         if(statuVal == 1){
             status = 'Accepted'
         }else if (statuVal == 0){
