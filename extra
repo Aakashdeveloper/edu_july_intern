@@ -378,3 +378,11 @@ match > for params
 
 
 db.rmenu.find({menu_id:{$in:[38,40]}}).pretty()
+
+///////
+step for deployment
+//////
+* backend Api should be live
+> go inside the folder using cmd
+> npm run build
+> Above step will create one build folder for you

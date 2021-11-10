@@ -6,7 +6,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import MenuDisplay from './menuDisplay'
 
-const url = "http://zomatoajulypi.herokuapp.com/details"
+const url = "https://zomatoajulypi.herokuapp.com/details"
 const menu = "https://zomatoajulypi.herokuapp.com/menu"
 
 class Details extends Component {
