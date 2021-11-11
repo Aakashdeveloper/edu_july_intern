@@ -11,7 +11,7 @@ class PlaceOrder extends Component {
 
         this.state={
             details:'',
-            tPrice:'',
+            amount:0,
             hotel_name:this.props.match.params.restName,
             name:'',
             phone:'',
@@ -26,6 +26,7 @@ class PlaceOrder extends Component {
     }
 
     handleSubmit = () => {
+        console.log(this.state)
         fetch(PostUrl,
             {
                 method:'POST',
@@ -36,7 +37,7 @@ class PlaceOrder extends Component {
                 body:JSON.stringify(this.state)
             }
         )
-        .then(this.props.history.push('/viewOrder'))
+        .then(console.log("payment gateway"))
     }
 
     renderItems =  (data) => {
@@ -71,7 +72,9 @@ class PlaceOrder extends Component {
                         </h3>
                     </div>
                     <div className="panel-body">
+                    <form method="POST" action="http://localhost:4000/paynow">
                         <div className="row">
+                            
                             <div className="col-md-12">
                                 <div className="col-md-6">
                                     <div className="form-group">
@@ -103,16 +106,20 @@ class PlaceOrder extends Component {
                                 </div>
                                 
                             </div>
+                            <input type="hidden" name="amount" value={this.state.amount}/>
+                            
                         </div>
                         {this.renderItems(this.state.details)}
                         <div className="row">
                             <div className="col-md-12">
-                                <h2>Total Cost is Rs.{this.state.tPrice}</h2>
+                                <h2>Total Cost is Rs.{this.state.amount}</h2>
                             </div>
                         </div>
-                        <button className="btn btn-success" onClick={this.handleSubmit}>
+                        <button className="btn btn-success" onClick={this.handleSubmit} 
+                        type="submit">
                                     Checkout
                         </button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -143,7 +150,7 @@ class PlaceOrder extends Component {
                 Totalprice = Totalprice+parseInt(item.menu_price)
                 return 'ok'
             })
-            this.setState({details:data,tPrice:Totalprice})
+            this.setState({details:data,amount:Totalprice})
         })
 
         

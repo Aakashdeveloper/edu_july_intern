@@ -386,3 +386,6 @@ step for deployment
 > go inside the folder using cmd
 > npm run build
 > Above step will create one build folder for you
+
+npm uninstall react-router-dom
+npm i react-router-dom@5.2.0
