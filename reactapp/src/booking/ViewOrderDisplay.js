@@ -7,12 +7,14 @@ const ViewDisplay = (props) => {
             return orderData.map((item) => {
                 return(
                     <tr>
+
+                        <td>{item.id}</td>
                         <td>{item.hotel_name}</td>
                         <td>{item.name}</td>
                         <td>{item.phone}</td>
                         <td>{item.email}</td>
                         <td>{item.address}</td>
-                        <td>Rs.{item.tPrice}</td>
+                        <td>Rs.{item.amount}</td>
                         <td>{item.status}</td>
                     </tr>
                 )
@@ -25,6 +27,7 @@ const ViewDisplay = (props) => {
             <table className="table">
                 <thead>
                     <tr>
+                        <th>Id</th>
                         <th>Rest Name</th>
                         <th>Name</th>
                         <th>Phone</th>

@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-import Header from '../Header'
 import axios from 'axios';
 import './details.css';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -37,7 +36,6 @@ class Details extends Component {
         let {details} = this.state
         return(
             <>
-                <Header/>
                 <br/>
                 <div className="container">
                     <div className="panel panel-danger">

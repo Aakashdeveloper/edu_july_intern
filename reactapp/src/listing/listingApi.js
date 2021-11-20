@@ -3,7 +3,6 @@ import axios from 'axios';
 import ListingDisplay from './listingDisplay';
 import CuisineFilter from '../filters/cusineFilter';
 import CostFilter from '../filters/costFilter';
-import Header from '../Header';
 
 const url = "https://zomatoajulypi.herokuapp.com/restaurant?mealtype_id="
 
@@ -23,7 +22,6 @@ class Listing extends Component {
     render(){
         return(
             <div className="row">
-                <Header/>
                 <div id="mainListing">
                     <div id="filter">
                         <center><h2>Filter</h2></center>

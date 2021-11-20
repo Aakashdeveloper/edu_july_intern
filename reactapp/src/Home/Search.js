@@ -53,15 +53,6 @@ class Search extends Component {
         console.log(this.state.restaurant)
         return(
             <div id="search">
-                <div id="login">
-                    <br/><br/>
-                    <a href="https://facebook.com/">
-                        Login
-                    </a>&nbsp;
-                    <a href="https://youtube.com/">
-                    Create an Account
-                    </a>
-                </div>
                 <div id="logo">
                     <span>e!</span>
                 </div>

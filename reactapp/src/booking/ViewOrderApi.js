@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import ViewDisplay from './ViewOrderDisplay';
-import Header from '../Header';
 import axios from 'axios';
 
 const url = "https://zomatoajulypi.herokuapp.com/viewOrder"
@@ -14,9 +13,15 @@ class ViewOrder extends Component {
         }
     }
     render(){
+        if(!sessionStorage.getItem('userData')){
+            return(
+                <div>
+                    <h1>Login first to see booking</h1>
+                </div>
+            )
+        }
         return(
             <div className="container">
-                <Header/>
                 <ViewDisplay orderData={this.state.orders}/>
             </div>
         )
@@ -24,7 +29,7 @@ class ViewOrder extends Component {
 
     // get orders 
     componentDidMount(){
-        axios.get(url).then((res) => {this.setState({orders:res.data})})
+        axios.get(`${url}?email=${sessionStorage.getItem('userData').split(',')[1]}`).then((res) => {this.setState({orders:res.data})})
     }
 }
 

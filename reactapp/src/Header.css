@@ -1,12 +1,7 @@
 #header{
     background-color: red;
-    height:86px;
+    height:60px;
     width:100%
-}
-
-.logoListing{
-    height:50px;
-    width:50px;
 }
 
 a{
@@ -16,4 +11,17 @@ a{
 #headingListing{
     color:red;
     margin: 26%;
+    height:60px;
+}
+
+#logo_main{
+    position: absolute;
+}
+
+.logoRight{
+    height:60px;
+    width:200px;
+    margin-right: 1%;
+    margin-top: 1%;
+    float:right;
 }

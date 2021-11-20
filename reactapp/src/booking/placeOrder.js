@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import './placeorder.css';
-import Header from '../Header'
 
 const url = "https://zomatoajulypi.herokuapp.com/menuItem";
 const PostUrl = "https://zomatoajulypi.herokuapp.com/placeOrder";
@@ -10,12 +9,13 @@ class PlaceOrder extends Component {
         super(props)
 
         this.state={
+            id:Math.floor(Math.random()*100000),
             details:'',
             amount:0,
             hotel_name:this.props.match.params.restName,
-            name:'',
-            phone:'',
-            email:'',
+            name:sessionStorage.getItem('userData')?sessionStorage.getItem('userData').split(',')[0]:'',
+            phone:sessionStorage.getItem('userData')?sessionStorage.getItem('userData').split(',')[2]:'',
+            email:sessionStorage.getItem('userData')?sessionStorage.getItem('userData').split(',')[1]:'',
             address:'',
             status:'Pending'
         }
@@ -60,10 +60,16 @@ class PlaceOrder extends Component {
     }
 
     render(){
+        if(!sessionStorage.getItem('userData')){
+            return(
+                <div>
+                    <h1>Login first to place booking</h1>
+                </div>
+            )
+        }
         console.log(this.state)
         return(
             <div className="container">
-                <Header/>
                 <br/>
                 <div className="panel panel-info">
                     <div className="panel-heading">
@@ -72,7 +78,7 @@ class PlaceOrder extends Component {
                         </h3>
                     </div>
                     <div className="panel-body">
-                    <form method="POST" action="http://localhost:4000/paynow">
+                    <form method="POST" action="https://zompay.herokuapp.com/paynow">
                         <div className="row">
                             
                             <div className="col-md-12">
