@@ -78,7 +78,7 @@ class PlaceOrder extends Component {
                         </h3>
                     </div>
                     <div className="panel-body">
-                    <form method="POST" action="https://zompay.herokuapp.com/paynow">
+                    <form method="POST" action="http://zompay.herokuapp.com/paynow">
                         <div className="row">
                             
                             <div className="col-md-12">
@@ -113,7 +113,7 @@ class PlaceOrder extends Component {
                                 
                             </div>
                             <input type="hidden" name="amount" value={this.state.amount}/>
-                            
+                            <input type="hidden" name="id" value={this.state.id}/>
                         </div>
                         {this.renderItems(this.state.details)}
                         <div className="row">

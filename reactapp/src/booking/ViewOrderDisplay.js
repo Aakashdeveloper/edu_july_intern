@@ -16,6 +16,8 @@ const ViewDisplay = (props) => {
                         <td>{item.address}</td>
                         <td>Rs.{item.amount}</td>
                         <td>{item.status}</td>
+                        <td>{item.bank}</td>
+                        <td>{item.bank_status}</td>
                     </tr>
                 )
             })
@@ -35,6 +37,8 @@ const ViewDisplay = (props) => {
                         <th>Address</th>
                         <th>Price</th>
                         <th>Status</th>
+                        <th>Bank</th>
+                        <th>Bank Status</th>
                     </tr>
                 </thead>
                 <tbody>

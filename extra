@@ -408,3 +408,11 @@ npm i react-router-dom@5.2.0
 (Header) => {'x-access-token':'token value from login'}
 
 npm i bcryptjs body-parser cors express jsonwebtoken mongoose
+
+
+npm i express express-session passport passport-google-oauth
+https://console.cloud.google.com/
+
+app.get('/',(req,res) => {
+    res.send('<a href="/auth/google">Login With Button</a>')
+})

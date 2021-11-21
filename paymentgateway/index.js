@@ -4,9 +4,6 @@ const qs = require("querystring");
 const cors = require('cors');
 const checksum_lib = require("./paytm/checksum");
 const config = require("./paytm/config");
-
-const app = express();
-const cors = require('cors');
 const app = express();
 app.use(cors())
 
@@ -21,7 +18,7 @@ app.get("/", (req, res) => {
 
 app.post("/paynow", [parseUrl, parseJson], (req, res) => {
   // Route for making payment
-
+  console.log(req.body)
   var paymentDetails = {
     orderID: req.body.id,
     amount: req.body.amount,
@@ -123,7 +120,7 @@ app.post("/callback", (req, res) => {
            var _results = JSON.parse(response);
              if(_results.STATUS == 'TXN_SUCCESS') {
                 console.log("^^^^^^^",_results)
-                res.redirect(`http://localhost:3004/viewOrder?status=${_results.STATUS}&ORDERID=${_results.ORDERID}&date=${_results.TXNDATE}&bank=${_results.BANKNAME}`)
+                res.redirect(`http://localhost:3003/viewOrder?status=${_results.STATUS}&ORDERID=${_results.ORDERID}&date=${_results.TXNDATE}&bank=${_results.BANKNAME}`)
              }else {
                  res.send('payment failed')
              }

@@ -159,6 +159,23 @@ app.delete('/deleteOrder',(req,res) => {
     })
 })
 
+app.put('/updateOrder/:id',(req,res) => {
+    var id = Number(req.params.id);
+    var status = req.body.status?req.body.status:"Pending"
+    db.collection('orders').updateOne(
+        {id:id},
+        {
+            $set:{
+                "date":req.body.date,
+                "bank_status":req.body.bank_status,
+                "bank":req.body.bank,
+                "status":status
+            }
+        }
+    )
+    res.send('data updated')
+})
+
 app.put('/updateStatus/:id',(req,res) => {
     var id = mongo.ObjectId(req.params.id);
     var status = 'Pending';
